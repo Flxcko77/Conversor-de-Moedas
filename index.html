@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+
     <title>Conversor de Moedas</title>
 </head>
 <body>
@@ -15,18 +16,50 @@
         <div class="content">
             <div class="content-moedas">
                 <div class="options">
-                    blabla
+                    <img src="images/bandeira-nacional-brasil.jpg" alt="bandeira-nacional-brasil" class="Bandeira-País">
+                    <select name="Dolar" id="selecione">
+                        <option value="none" disabled selected>selecione</option>
+                        <option value="Dolar">Dolar</option>
+                        <option value="Euro">Euro</option>
+                        <option value="Real">Real</option>
+                        <option value="Libra">Libra</option>
+                    </select>
+                </div>
+                <div id="input-valorDigitado">
+                    <input type="number" name="ValorDigitado" id="ValorDigitado" placeholder="Digite o valor que quer converter aqui">
                 </div>
             </div>
             <div class="content-moedas">
-                content2
+                <div class="options">
+                    <img src="images/bandeira-nacional-brasil.jpg" alt="bandeira-nacional-brasil" class="Bandeira-País">
+                    <select name="Dolar" id="selecione">
+                        <option value="none" disabled selected>selecione</option>
+                        <option value="Dolar">Dolar</option>
+                        <option value="Euro">Euro</option>
+                        <option value="Real">Real</option>
+                        <option value="Libra">Libra</option>
+                    </select>
+                </div>
+                <h2 id="Resultado">Resultado</h2>
             </div>
         </div>
         <div class="content-btn">
             <input type="button" value="Converter" onclick="Converter"() id="botao">
         </div>
         <div class="content-cred">
-
+            <div class="content-credFilho" id="Cred1">
+                <img src="images/Perfil.jpg" alt="Foto-GuilhermeDev" class="FotoPerfil">
+                <p>Projeto desenvolvido por mim<br> com o intuido de aprimorar meu conhecimentos<br> em Javascript e como desafio proposto pela<br>
+                <a href="https://www.linkedin.com/company/mentoria-tech/">@MentoriaTech</a></p>
+            </div>
+            <div class="content-credFilho" id="Cred2">
+                <ul>
+                    <li><a href="https://www.facebook.com/profile.php?id=100016791619465" target="_blank"><img src="images/facebook-brands.svg" alt="icone-facebook" class="social-midia"></a></li>
+                    <li><a href="https://github.com/Flxcko77" target="_blank"><img src="images/github-brands.svg" alt="icone-github" class="social-midia"></a></li>
+                    <li><a href="https://www.instagram.com/flxcko7/" target="_blank"><img src="images/instagram-brands.svg" alt="icone-instagram" class="social-midia"></a></li>
+                    <li><a href="https://www.linkedin.com/in/guilherme-vieira-a7357420a/" target="_blank"><img src="images/linkedin-brands.svg" alt="icone-linkedin" class="social-midia"></a></li>
+                </ul>
+            </div>
         </div>
     </main>
 </body>
