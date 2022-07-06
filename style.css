@@ -9,10 +9,15 @@
     src: url(Fonts/UnitedStates.ttf);
 }
 
+@font-face {
+    font-family: Robot;
+    src: url(Fonts/Robota-NonCommercial.otf);
+}
+
 body{
     height: 100vh;
     width: 100%;
-    background: linear-gradient(90deg, #020024 0%, #090979 35%, #00d4ff 100%);
+    background:rgb(94,110,113);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -28,43 +33,46 @@ header {
 
 h1{
     font-family: Dollar;
-    color: rgb(103, 204, 103);
+    color: rgb(27,30,30);
+    border-bottom: 2px solid rgb(193,59,6);
 }
 
 main {
     height: 70vh;
     width: 80%;
-    background: blueviolet;
-    margin-top: 25px;
+    background: rgb(27,30,30);
+    margin-top: 0px;
+    border-radius: 50px 0px 50px 0px;
 }
 
 div.content{
     height: 60%;
     width: 100%;
-    background: blue;
     display: flex;
     align-items: center;
     justify-content: space-around;
 }
 
 div.content-moedas{
-    background: red;
     height: 150px;
     width: 400px;
     border-radius: 20px;
     display: flex;
     flex-direction: column;
     text-align: center;
+    background: rgb(94,110,113);
+    border: 2px solid rgb(193,59,6);
+    
 }
 
 div.options{
     height: 40%;
     width: 100%;
-    background: rgb(165, 97, 97);
-    border-radius: 20px;
     display: flex;
     justify-content: space-around;
     align-items: center;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+    border-bottom: 2px solid black;
 }
 
 img.Bandeira-País{
@@ -80,10 +88,11 @@ select{
     height: 50%;
     text-align: center;
     border: 2px solid black;
+    background: rgba(255, 255, 255, 0.5);
+    font-family: Robot;
 }
 
 div#input-valorDigitado{
-    background: rgb(88, 0, 19);
     height: 70px;
     width: 100%;
     display: flex;
@@ -97,12 +106,16 @@ input#ValorDigitado{
     height: 30px;
     text-align: center;
     border-radius: 20px;
-    border: none;
+    border: 2px solid black;
+    font-family: Robot;
+    background: rgba(255, 255, 255, 0.5);
+
 
 }
 
 h2#Resultado{
     margin-top: 30px;
+    font-family: Robot;
 }
 
 div.content-btn {
@@ -118,7 +131,9 @@ input#botao{
     height: 30px;
     border-radius: 20px;
     background: none;
-    border: 2px solid black;
+    border: 2px solid rgb(193,59,6);
+    color: rgb(193,59,6);
+    background: rgba(255, 255, 255, 0.1);
     transition: 1s;
 
 }
@@ -126,14 +141,16 @@ input#botao{
 input#botao:hover{
     width: 250px;
     border-radius: 50px 0px 50px 0px;
+    background: rgb(193,59,6);
+    color: whitesmoke;
     transform: scale(1.2);
+    border: 2px solid black;
 }
 
 
 div.content-cred{
     height: 30%;
     width: 100%;
-    background: yellowgreen;
     display: flex;
     justify-content: space-between;
 }
@@ -147,7 +164,17 @@ div.content-credFilho{
 p{
     margin-top: 20px;
     margin-left: 5px;
+    font-family: Robot;
+    color: whitesmoke;
+    font-size: 1.0em;
 }
+
+a{
+    text-decoration: none;
+    color: rgb(193,59,6);
+    
+}
+
 
 div#Cred2{
     display: flex;
@@ -160,15 +187,24 @@ ul {
     justify-content: end;
     align-items: flex-end;
     list-style: none;
-    background: white;
     width: 80%;
     height: 60%;
+    margin-right: 10px;
+    margin-bottom: 2px;
 }
 
 li{
     margin-right: 10px;
-    background: red;
-    padding: 5px;
+    background: rgba(255, 255, 255, 0.5);
+    padding: 8px;
+    border-radius: 30px;
+    transition: 1.2s;
+}
+
+li:hover{
+    margin-bottom: 20px;
+    transform: scale(1.2);
+    background:rgb(193,59,6) ;
 }
 
 img.social-midia{
@@ -180,7 +216,15 @@ img.FotoPerfil{
     height: 100px;
     width: 100px;
     margin-top: 10px;
+    margin-left: 10px;
     border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
-    border: 2px solid black;
+    border: 2px solid rgb(193,59,6);
 
+}
+
+
+h2#copyright{
+    font-family: Robot;
+    margin-top: 10px;
+    opacity: 55%;
 }
