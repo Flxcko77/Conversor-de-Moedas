@@ -18,25 +18,20 @@
                 <div class="options">
                     <img src="images/bandeira-nacional-brasil.jpg" alt="bandeira-nacional-brasil" class="Bandeira-País" id="Bandeira1">
                     <select name="SelecioneMoeda" id="selecione" onclick="selecionando()">
-                        <option id="None" name="MoedaEstrangeira" value="none" disabled selected >SELECIONE</option>
-                        <option id="Dolar" name="MoedaEstrangeira" value="dolar">DOLAR</option>
-                        <option id="Euro" name="MoedaEstrangeira" value="euro">EURO</option>
-                        <option id="Real" name="MoedaEstrangeira" value="real">REAL</option>
-                        <option id="Libra" name="MoedaEstrangeira" value="libra">LIBRA</option>
+                        <option id="Real" name="MoedaEstrangeira" value="real" selected >REAL</option>
                     </select>
                 </div>
                 <div id="input-valorDigitado">
-                    <input type="number" name="ValorDigitado" id="ValorDigitado" placeholder="DIGITE O VALOR AQUI PARA CONVERTER">
+                    <input type="number" name="ValorDigitado" id="ValorDigitado" placeholder="DIGITE O VALOR AQUI PARA CONVERTER" required>
                 </div>
             </div>
             <div class="content-moedas">
                 <div class="options">
-                    <img src="images/bandeira-nacional-brasil.jpg" alt="bandeira-nacional-brasil" class="Bandeira-País" id="Bandeira2">
-                    <select name="SelecioneMoeda" id="selecioneConvert" onclick="selecionando()">
+                    <img src="images/bandeira-nacional-EUA.jpg" alt="bandeira-nacional-Eua" class="Bandeira-País" id="Bandeira2">
+                    <select name="SelecioneMoeda" id="selecioneConvert" >
                         <option id="None" name="MoedaEstrangeira" value="none" disabled selected>SELECIONE</option>
                         <option id="Dolar" name="MoedaEstrangeira" value="dolar">DOLAR</option>
                         <option id="Euro" name="MoedaEstrangeira" value="euro">EURO</option>
-                        <option id="Real" name="MoedaEstrangeira" value="real">REAL</option>
                         <option id="Libra" name="MoedaEstrangeira" value="libra">LIBRA</option>
                     </select>
                 </div>
