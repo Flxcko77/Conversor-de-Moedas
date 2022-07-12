@@ -16,13 +16,13 @@
         <div class="content">
             <div class="content-moedas">
                 <div class="options">
-                    <img src="images/bandeira-nacional-brasil.jpg" alt="bandeira-nacional-brasil" class="Bandeira-País">
+                    <img src="images/bandeira-nacional-brasil.jpg" alt="bandeira-nacional-brasil" class="Bandeira-País" id="Bandeira1">
                     <select name="Dolar" id="selecione">
-                        <option value="none" disabled selected>SELECIONE</option>
-                        <option value="Dolar">DOLAR</option>
-                        <option value="Euro">EURO</option>
-                        <option value="Real">REAL</option>
-                        <option value="Libra">LIBRA</option>
+                        <option id="None" value="none" disabled selected>SELECIONE</option>
+                        <option id="Dolar" value="Dolar">DOLAR</option>
+                        <option id="Euro" value="Euro">EURO</option>
+                        <option id="Real" value="Real">REAL</option>
+                        <option id="Libra" value="Libra">LIBRA</option>
                     </select>
                 </div>
                 <div id="input-valorDigitado">
@@ -31,20 +31,20 @@
             </div>
             <div class="content-moedas">
                 <div class="options">
-                    <img src="images/bandeira-nacional-brasil.jpg" alt="bandeira-nacional-brasil" class="Bandeira-País">
-                    <select name="Dolar" id="selecione">
-                        <option value="none" disabled selected>SELECIONE</option>
-                        <option value="Dolar">DOLAR</option>
-                        <option value="Euro">EURO</option>
-                        <option value="Real">REAL</option>
-                        <option value="Libra">LIBRA</option>
+                    <img src="images/bandeira-nacional-brasil.jpg" alt="bandeira-nacional-brasil" class="Bandeira-País" id="Bandeira2">
+                    <select name="Dolar" id="selecioneConvert">
+                        <option id="None" value="none" disabled selected>SELECIONE</option>
+                        <option id="Dolar" value="Dolar">DOLAR</option>
+                        <option id="Euro" value="Euro">EURO</option>
+                        <option id="Real" value="Real">REAL</option>
+                        <option id="Libra" value="Libra">LIBRA</option>
                     </select>
                 </div>
                 <h2 id="Resultado">Resultado</h2>
             </div>
         </div>
         <div class="content-btn">
-            <input type="button" value="Converter" onclick="Converter"() id="botao">
+            <input type="button" value="Converter" onclick="Converter()" id="botao">
         </div>
         <div class="content-cred">
             <div class="content-credFilho" id="Cred1">
@@ -64,6 +64,6 @@
     </main>
     
         <h2 id="copyright">© 2022 GUILHERME VIEIRA</h2>
-    
-</body>
+        <script src="Moedas.js"></script>
+    </body>
 </html>
