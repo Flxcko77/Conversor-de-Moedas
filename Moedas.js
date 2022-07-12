@@ -1,13 +1,23 @@
-function Converter(){
-    var ValorDigitado = window.document.getElementById('ValorDigitado').value;
-    var Convertido = window.document.getElementById('Resultado');
-    var Dolar = ValorDigitado * 5.38;
+    // -------------> Selecionando Elementos <---------------------
+     // -------------> Selecionando input com valor digitado <---------------------
+        let Real = window.document.querySelector('#ValorDigitado').value;
+    
+    // -------------> Declaração de variáveis (Cotação do dia 12/07/2022) <---------------------
+        let Dolar = Real * 5.38;
+        let Euro = Real * 5.38;
+        let Libra = Real * 6.37;
+        let MoedaConvertida = window.document.getElementById('#Resultado') ;
+    
+        // -------------> Selecionar os elementos options dentro de select (Criar um array deles) <---------------------
+        
 
-    if(Convertido < 0){
-        Convertido.innerHTML = `Por Favor Digite um valor válido!`
-    }else {
-        Convertido.innerHTML = `A conversão dá ${Dolar}`
-    }
+        // -------------> Selecionando imgs <---------------------
+        
 
-}
+        // -------------> Selecionando as moedas <---------------------
+       
+        // -------------> Iniciando a conversão através da function <---------------------
+        function Converter(){
+           
+        }
 
