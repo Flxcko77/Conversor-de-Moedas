@@ -3,7 +3,7 @@
        function Converter(){
         let Real = window.document.getElementById('ValorDigitado').value 
         let MoedaConvertida = window.document.getElementById('Resultado')
-        let Dolar = Real * 5.38
+        let Dolar = Real * 0.18;
         let DolarFormatado = Dolar.toLocaleString("en-US", {style: "currency", currency: "USD"})
 
         MoedaConvertida.innerHTML = `Moeda Convertida USD ${DolarFormatado}`
